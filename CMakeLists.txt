@@ -4,14 +4,14 @@ project(drogon)
 
 message(STATUS "compiler: " ${CMAKE_CXX_COMPILER_ID})
 
-option(BUILD_CTL "Build drogon_ctl" ON)
-option(BUILD_EXAMPLES "Build examples" ON)
+option(BUILD_CTL "Build drogon_ctl" OFF)
+option(BUILD_EXAMPLES "Build examples" OFF)
 option(BUILD_ORM "Build orm" ON)
 option(COZ_PROFILING "Use coz for profiling" OFF)
 option(BUILD_SHARED_LIBS "Build drogon as a shared lib" OFF)
 option(BUILD_DOC "Build Doxygen documentation" OFF)
-option(BUILD_BROTLI "Build Brotli" ON)
-option(BUILD_YAML_CONFIG "Build yaml config" ON)
+option(BUILD_BROTLI "Build Brotli" OFF)
+option(BUILD_YAML_CONFIG "Build yaml config" OFF)
 option(USE_SUBMODULE "Use trantor as a submodule" ON)
 
 include(CMakeDependentOption)
